@@ -7,10 +7,10 @@
     </ApplicationDefinition>
   </ItemGroup>
   <ItemGroup>
-    <Compile Update="View\TroubleshootView.xaml.cs">
+    <Compile Update="View\IssueItemControl.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Update="View\ExitView.xaml.cs">
+    <Compile Update="View\TroubleshootView.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
     <Compile Update="View\StartView.xaml.cs">
@@ -19,9 +19,6 @@
   </ItemGroup>
   <ItemGroup>
     <Page Update="View\TroubleshootView.xaml">
-      <SubType>Designer</SubType>
-    </Page>
-    <Page Update="View\ExitView.xaml">
       <SubType>Designer</SubType>
     </Page>
     <Page Update="View\StartView.xaml">
