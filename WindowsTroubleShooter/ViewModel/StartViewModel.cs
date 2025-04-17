@@ -27,7 +27,24 @@ namespace WindowsTroubleShooter.ViewModel
         
         public ObservableCollection<string> SelectedIssues { get; set; } = new ObservableCollection<string>();
 
-       
+        public double CpuUsage { get; set; } = 50;
+        public double RamUsage { get; set; } = 70;
+        public double DriveSpace { get; set; } = 80;
+
+        public ObservableCollection<string> TroubleshootingHistory { get; set; } = new ObservableCollection<string>
+        {
+            "Network Troubleshoot: Fixed",
+            "Disk Cleanup: Completed",
+            "Update Check: No Updates"
+        };
+
+        public ObservableCollection<string> QuickFixes { get; set; } = new ObservableCollection<string>
+        {
+            "Clear Temporary Files",
+            "Restart Windows Explorer",
+            "Run System File Checker"
+        };
+
 
         public StartViewModel() 
         {
@@ -65,6 +82,7 @@ namespace WindowsTroubleShooter.ViewModel
                 }
 
             };
+
             Version = "Version 2.0.1";
         }
 
